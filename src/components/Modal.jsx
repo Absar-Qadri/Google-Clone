@@ -1,0 +1,22 @@
+import React from "react";
+
+function Modal({ isOpen, onClose }) {
+  if (!isOpen) return null;
+
+  return (
+    <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-50">
+      <div className="bg-white p-8 rounded-lg">
+        <h2 className="text-lg font-semibold mb-4">Voice Search</h2>
+        <p className="mb-4">Let me know what you want to search...</p>
+        <button
+          onClick={onClose}
+          className="px-4 py-2 bg-blue-500 text-white rounded-lg"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  );
+}
+
+export default Modal;
