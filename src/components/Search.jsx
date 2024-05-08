@@ -70,8 +70,8 @@ function Search() {
         />
         <img
           onClick={handleMicClick}
-          className="h-8 w-8 text-black-200 mr-2 cursor-pointer"
-          src="../../images/google_mic_icon.svg"
+          className="h-8 w-8 mr-2 cursor-pointer"
+          src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-25-512.png"
           alt="mike"
         />
       </form>
