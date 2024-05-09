@@ -1,8 +1,8 @@
 import { createContext, useContext, useEffect, useReducer } from "react";
 
 const ResultsContext = createContext();
-const API_KEY = "AIzaSyChU5p2aomxQyezHRRV3LWRuLIOtqXPRXs";
-const ENGINE_ID = "871cd2b12a6154f2a";
+const API_KEY = process.env.REACT_APP_API_KEY;
+const ENGINE_ID = process.env.REACT_APP_ENGINE_ID;
 const baseUrl = `https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${ENGINE_ID}`;
 
 const initialState = {
